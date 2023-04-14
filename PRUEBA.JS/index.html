@@ -1,0 +1,50 @@
+<html>
+<head>
+<STYLE TYPE="text/css">   
+
+textarea.colorInicio {   
+ background-color: #000000;   
+ color: #ffffff;   
+}   
+  
+textarea.colorFoco {   
+ background-color:#0066FF;   
+ color: #ffffff;   
+}   
+
+textarea.imagenInicio {   
+ background-image: url( img01.jpg );   
+ color: #ffffff;   
+}   
+  
+textarea.imagenFoco {   
+ background-image: url( img02.jpg );   
+ color: #ffffff;   
+}  
+
+</STYLE>  
+
+</head>
+
+<body>
+<p>La primera area de texto solo cambia a otro de color cuando se pasa el mouse</p>  
+<div class="recuadro3">  
+<form>
+<textarea rows="10" cols="40" class="colorInicio" onMouseOver="this.className='colorFoco'" onMouseOut="this.className='colorInicio'">
+Grupo Editorial Megabyte, nace de la idea de un grupo de estudiantes al no encontrar materiales de calidad y de bajo costo. 
+En sus inicios investigan y elaboran proyectos con asesoramiento de docentes de larga trayectoria universitaria, llegando así, a crear nuestras primeras publicaciones. 
+</textarea>
+</form>  
+<br>
+<br>
+<p>La segunda area de texto cambia a otra imagen cuando se pasa el mouse</p>  
+<form>
+<textarea rows="10" cols="40" class="imagenInicio" onMouseOver="this.className='imagenFoco'" onMouseOut="this.className='imagenInicio'">
+Grupo Editorial Megabyte, nace de la idea de un grupo de estudiantes al no encontrar materiales de calidad y de bajo costo. 
+En sus inicios investigan y elaboran proyectos con asesoramiento de docentes de larga trayectoria universitaria, llegando así, a crear nuestras primeras publicaciones. 
+</textarea>
+</form>  
+
+</div>  
+</body>
+</html>
